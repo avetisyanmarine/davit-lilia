@@ -28,10 +28,10 @@ export const MusicPage = ({ isPlaying }) => {
   return (
     <MusicPagePart>
       <div>
-        <h4 className="text-[16px]">Love Story</h4>
+        <h4 className="text-[16px]">Mon Amour</h4>
       </div>
       <div onClick={handleClick}>
-        <img src={manualPlay ? Pause : Play} alt="music-control" />{" "}
+        <img src={manualPlay ? Pause : Play} alt="music-control" />
       </div>
       <audio ref={audioRef} src={Song} loop />
     </MusicPagePart>

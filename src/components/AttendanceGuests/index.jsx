@@ -38,8 +38,7 @@ const AttendanceGuests = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]:
-        name === "guestCount" ? Math.max(0, parseInt(value) || 0) : value,
+      [name]: name === "guestCount" ? Math.max(0, parseInt(value) || 0) : value,
     }));
   };
 
@@ -97,7 +96,7 @@ const AttendanceGuests = () => {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwy3aY20SkJOoBjBmCacmnYS4ziZqJvmViSa0MaUwxXpKjbbGz2VmsT4LCy5_MMRM2FyA/exec",
+        "https://script.google.com/macros/s/AKfycbz9KsBdcTch4QS40mO2nJ6LHUciVbJdE0RFr44GIHw08M753ttbgnBGS37FoiVrtjDn/exec",
         {
           method: "POST",
           mode: "no-cors",
@@ -145,7 +144,7 @@ const AttendanceGuests = () => {
       {/* Header */}
       <Header>
         <h3>Հրավերի պատասխան</h3>
-        <p>Խնդրում ենք հաստատել Ձեր մասնակցությունը</p>
+        <p>Խնդրում ենք հաստատել Ձեր մասնակցությունը մինչև 20․06․26</p>
       </Header>
 
       {message.text && (

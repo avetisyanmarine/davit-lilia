@@ -35,14 +35,13 @@ const FirstPagePartContext = styled.div`
     .uniqueDiv {
         flex-direction: column;
         gap: 10px;
+        margin-top: 30px;
         .and {
             color: #fefefe;
             margin-bottom: 15px;
         }
         .uniqueH1 {
             line-height: 0;
-            letter-spacing: -8px;
-            margin-right: 50px;
         }
         p {
             color: #957b70;

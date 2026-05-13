@@ -6,14 +6,11 @@ import {
 } from "./styled";
 import { Container } from "../../GlobalStyle";
 import SvgChurch from "../../assets/vectors/church.png";
-import Church from "../../assets/image/church.avif";
+import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.jpg";
+import Photo2 from "../../assets/image/photo2.jpg";
 import SvgRing from "../../assets/vectors/ring.png";
 import SvgCouple from "../../assets/vectors/cup.png";
-import SerLiqySer from "../../assets/image/serliqyser.png";
-import PhotoGroup1 from "../../assets/image/groupphoto1.JPG";
-import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
-import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
 import { ThirdPageBlock } from "./third-page-block";
@@ -25,68 +22,40 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            // uniqueMargin={50}
             className="uniqueone"
             ImageSrc={SvgRing}
-            number={"11:00"}
+            number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="ք.Սևան , Շահումյան 10ա"
           />
           <ThirdPageBlock
             ImageSrc={SvgChurch}
-            number={"15:00"}
+            number={"15:45"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Գրիգոր Լուսավորիչ"
+            smallText="Հովհաննավանք եկեղեցի"
           />
-
           <ThirdPageBlock
             className="secondBlock"
-            // uniqueMargin={100}
             line={true}
             ImageSrc={SvgCouple}
-            number={"17:30"}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Հրաշք Այգի ռեստորան"
+            smallText="Աշտարակ Հոլ ռեստորան"
           />
         </ThirdPagePartContext>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Գրիգոր Լուսավորիչ"}
-            mapSrc={"https://maps.app.goo.gl/xC2iH7GaFDXZNsh89"}
+            bigText={"Հովհաննավանք եկեղեցի"}
+            mapSrc={"https://yandex.com/maps/org/224495205780?"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Հրաշք Այգի ռեստորան"}
-            mapSrc={"https://maps.app.goo.gl/mNLpjba1TgPTbT3y7"}
+            bigText={"Աշտարակ Հոլ ռեստորան"}
+            mapSrc={"https://yandex.com/maps/org/100881804174?"}
           />
         </ForthPagePartContext>
-        <div
-          className="flex h-[100vh] gap-[20px] justify-around"
-          style={{ marginTop: "70px" }}
-        >
-          <div>
-            <img src={SerLiqySer} className="h-[100vh] w-full" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <img
-              src={PhotoGroup1}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-            <img
-              src={PhotoGroup2}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-            <img
-              src={PhotoGroup3}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-          </div>
-        </div>
       </Container>
+      <img src={Photo2} className="rounded-[15px]" alt="" />
       <Container>
         <ThirdPagePartMini>
           <h3 className="dzev">Սիրով սպասում ենք</h3>

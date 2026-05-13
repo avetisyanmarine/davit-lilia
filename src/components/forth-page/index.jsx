@@ -1,7 +1,7 @@
 import { Container, Flexible } from "../../GlobalStyle";
-import Church from "../../assets/image/church.avif";
+import Church from "../../assets/image/church.jpg";
 import Bant from "../../assets/image/bant.png";
-import PHoto3 from "../../assets/image/photo3.JPG";
+import PHoto3 from "../../assets/image/photo3.jpg";
 import SaveTheDate from "../../assets/image/savethedate.png";
 import AttendanceGuests from "../AttendanceGuests";
 import { ForthPagePart } from "./styled";
@@ -13,7 +13,7 @@ export const ForthPage = () => {
         <div className="relative">
           <img src={PHoto3} alt="Photo 3"className="rounded-[15px]" />
           <img
-            className="absolute top-1.5 left-1.5 w-[130px]"
+            className="absolute top-1.5 left-1.5 w-[110px]"
             src={SaveTheDate}
             alt="Save The Date"
           />
@@ -28,8 +28,7 @@ export const ForthPage = () => {
             data-aos="fade-up"
             className="absolute w-full h-[322px] bg-white/45 text-2xl"
           >
-            Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ. ինչպես նաև
-            հարմարավետ կոշիկներ` պարելու համար:
+            Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ։
             <br />
             <br />
             Հարսի պարի և հրավառության ընթացքում կխնդրենք ծնողներին ուշադիր լինել
@@ -43,7 +42,7 @@ export const ForthPage = () => {
           className="text-center font-[ArmAllegrou]"
           style={{ margin: "20px 0" }}
         >
-          Սիրով ՝ <br /> Նարեկ և Էմմի
+          Սիրով ՝ <br /> Կարեն և Քրիստինե
         </h2>
       </Container>
     </ForthPagePart>
