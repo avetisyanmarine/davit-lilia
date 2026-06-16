@@ -99,7 +99,7 @@ export const ThirdPage = () => {
         <ThirdPagePartCalendar>
           {[...Array(35)].map((_, i) =>
             i > 1 && i <= 32 ? (
-              <div className={i - 1 == 17 ? "special" : ""}>{i - 1}</div>
+              <div className={i - 1 == 16 ? "special" : ""}>{i - 1}</div>
             ) : (
               <div></div>
             ),

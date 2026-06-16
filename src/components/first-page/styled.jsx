@@ -21,12 +21,11 @@ const FirstPagePartContext = styled.div`
     width: 100%;
     top: 0;
     height: 100%;
-    text-shadow: 0px 0px 10px #000000;
     h2 {
         text-align: center;
         font-family: ArmAllegrou;
         line-height: 35px;
-        color: #fff;
+        color: aliceblue;
         letter-spacing: 5px;
     }
     .uniqueH2 {
