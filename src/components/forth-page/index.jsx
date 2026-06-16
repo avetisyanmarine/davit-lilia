@@ -1,5 +1,5 @@
 import { Container, Flexible } from "../../GlobalStyle";
-import Church from "../../assets/image/church.jpg";
+import Church from "../../assets/image/church.png";
 import Bant from "../../assets/image/bant.png";
 import PHoto3 from "../../assets/image/photo3.jpg";
 import SaveTheDate from "../../assets/image/savethedate.png";
@@ -13,7 +13,7 @@ export const ForthPage = () => {
         <div className="relative">
           <img src={PHoto3} alt="Photo 3"className="rounded-[15px]" />
           <img
-            className="absolute top-1.5 left-1.5 w-[110px]"
+            className="absolute top-1.5 left-1.5 w-[130px]"
             src={SaveTheDate}
             alt="Save The Date"
           />
@@ -42,7 +42,7 @@ export const ForthPage = () => {
           className="text-center font-[ArmAllegrou]"
           style={{ margin: "20px 0" }}
         >
-          Սիրով ՝ <br /> Կարեն և Քրիստինե
+          Սիրով ՝ <br /> Արման և Շուշաննա
         </h2>
       </Container>
     </ForthPagePart>
