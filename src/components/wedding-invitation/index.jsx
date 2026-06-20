@@ -72,7 +72,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
             alt="Seal"
             className="w-38 h-38 md:w-32 md:h-32 object-contain"
           />
-          <h2 className="text-[#e7e4e4] text-[35px] mb-1 text-center">Բացել</h2>
+          <h2 className="text-[#e7e4e4]! text-[35px] mb-1  text-center">Բացել</h2>
         </motion.div>
       )}
     </div>

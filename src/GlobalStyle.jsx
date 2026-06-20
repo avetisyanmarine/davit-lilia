@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 36px;
     font-weight: 100;
+    color: #616652;
   }
   h1 {
     font-size: 80px;

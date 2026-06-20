@@ -1,7 +1,7 @@
 import { SecondPagePart, SecondPagePartContext } from "./styled";
 import { Container } from "../../GlobalStyle";
 import Sign from "../../assets/vectors/sign.png";
-import Photo1 from "../../assets/image/photo1.jpg";
+import Photo1 from "../../assets/image/photo4.jpg";
 
 export const SecondPage = () => {
   return (

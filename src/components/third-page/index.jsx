@@ -13,7 +13,8 @@ import Bride from "../../assets/vectors/bride.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
-import Photo2 from "../../assets/image/photo2.png";
+import Photo5 from "../../assets/image/photo5.jpg";
+import Photo1 from "../../assets/image/photo1.jpg";
 import { ThirdPageBlock } from "./third-page-block";
 export const ThirdPage = () => {
   return (
@@ -51,7 +52,7 @@ export const ThirdPage = () => {
             smallText="Աշտարակ Հոլ ռեստորան"
           />
         </ThirdPagePartContext>
-        <img src={Photo2} className="rounded-[15px]" style={{ marginTop: "50px" }} />
+        <img src={Photo5} className="rounded-[15px]" style={{ marginTop: "50px" }} />
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
@@ -65,6 +66,7 @@ export const ThirdPage = () => {
           />
         </ForthPagePartContext>
       </Container>
+      <img src={Photo1} className="rounded-[15px]" style={{ margin: "50px auto" }} />
       <Container>
         <ThirdPagePartMini>
           <h3 className="dzev">Սիրով սպասում ենք</h3>

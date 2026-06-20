@@ -6,6 +6,7 @@ import SaveTheDate from "../../assets/image/savethedate.png";
 import AttendanceGuests from "../AttendanceGuests";
 import Photo4 from "../../assets/image/photo4.jpg";
 import { ForthPagePart } from "./styled";
+import Photo2 from "../../assets/image/photo2.png";
 
 export const ForthPage = () => {
   return (
@@ -29,7 +30,8 @@ export const ForthPage = () => {
             data-aos="fade-up"
             className="absolute w-full h-[322px] bg-white/45 text-2xl"
           >
-            Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ։
+            Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ․ ինչպես նաև
+            հարմարավետ կոշիկներ՝ պարելու համար։
             <br />
             <br />
             Հարսի պարի և հրավառության ընթացքում կխնդրենք ծնողներին ուշադիր լինել
@@ -38,20 +40,32 @@ export const ForthPage = () => {
         </Flexible>
       </div>
       <div className="text-center w-full relative">
-        <img src={Photo4} className="rounded-[15px]" style={{ marginBottom: "40px" }} />
-        <h2 style={{ marginBottom: "20px", fontFamily: "cursive" }}>Dress Code</h2>
+        <img
+          src={Photo4}
+          className="rounded-[15px]"
+          style={{ marginBottom: "40px" }}
+        />
+        <h2 style={{ marginBottom: "20px", fontFamily: "cursive" }}>
+          Dress Code
+        </h2>
         <Flexible
           style={{ padding: "0 25px" }}
           data-aos="fade-up"
           className="w-full h-[272px] bg-white/45 text-2xl"
         >
-          Խնդրում ենք հարսանիքի օրը <br /> ԽՈՒՍԱՓԵԼ <br /> սպիտակ հագուստ կրելուց
+          Խնդրում ենք հարսանիքի օրը <br /> ԽՈՒՍԱՓԵԼ <br /> սպիտակ հագուստ
+          կրելուց
           <br />
           <br />
           Մնացած բոլոր երանգները սազում են Ձեզ առավել քան երբևէ
         </Flexible>
       </div>
       <Container>
+        <img
+          src={Photo2}
+          className="rounded-[15px]"
+          style={{ margin: "40px 0" }}
+        />
         <h2
           className="text-center font-[ArmAllegrou]"
           style={{ margin: "20px 0" }}

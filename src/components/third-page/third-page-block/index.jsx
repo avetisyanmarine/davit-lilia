@@ -23,7 +23,7 @@ export const ThirdPageBlock = ({
         </ThirdPageBlockPartSvg>
         <ThirdPagePartContext data-aos="fade-left">
           <h3>{number}</h3>
-          <h3>{bigText}</h3>
+          <h3 className="text-[#616652]! text-[24px] mb-1  text-center">{bigText}</h3>
           <p>{smallText}</p>
           {link && (
             <a className="underline" href={link} target="_blank" rel="noopener noreferrer">
