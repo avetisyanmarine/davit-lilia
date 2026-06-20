@@ -66,12 +66,12 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հուլիս</h3>
+          <h3>Օգոստոս</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
-          {[...Array(35)].map((_, i) =>
-            i > 1 && i <= 32 ? (
-              <div className={i - 1 == 16 ? "special" : ""}>{i - 1}</div>
+          {[...Array(45)].map((_, i) =>
+            i > 4 && i <= 35 ? (
+              <div className={i - 4 == 24 ? "special" : ""}>{i - 4}</div>
             ) : (
               <div></div>
             ),
