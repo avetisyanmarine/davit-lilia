@@ -19,6 +19,9 @@ const ThirdPagePartContext = styled.div`
   .secondBlock {
     margin-left: 19px;
   }
+  h3 {
+    font-size: 31px;
+  }
 `;
 const ThirdPagePartMini = styled.div`
   text-align: center;
