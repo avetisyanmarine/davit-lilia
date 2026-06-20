@@ -10,6 +10,7 @@ export const ThirdPageBlock = ({
   uniqueMargin,
   className,
   line,
+  link,
 }) => {
   return (
     <>
@@ -24,6 +25,11 @@ export const ThirdPageBlock = ({
           <h3>{number}</h3>
           <h3>{bigText}</h3>
           <p>{smallText}</p>
+          {link && (
+            <a className="underline" href={link} target="_blank" rel="noopener noreferrer">
+              Քարտեզ
+            </a>
+          )}
         </ThirdPagePartContext>
       </ThirdPageBlockPart>
       {!line && (

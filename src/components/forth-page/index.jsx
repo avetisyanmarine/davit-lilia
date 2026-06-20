@@ -4,6 +4,7 @@ import Bant from "../../assets/image/bant.png";
 import PHoto3 from "../../assets/image/photo3.jpg";
 import SaveTheDate from "../../assets/image/savethedate.png";
 import AttendanceGuests from "../AttendanceGuests";
+import Photo4 from "../../assets/image/photo4.jpg";
 import { ForthPagePart } from "./styled";
 
 export const ForthPage = () => {
@@ -37,6 +38,7 @@ export const ForthPage = () => {
         </Flexible>
       </div>
       <div className="text-center w-full relative">
+        <img src={Photo4} className="rounded-[15px]" style={{ marginBottom: "40px" }} />
         <h2 style={{ marginBottom: "20px", fontFamily: "cursive" }}>Dress Code</h2>
         <Flexible
           style={{ padding: "0 25px" }}
