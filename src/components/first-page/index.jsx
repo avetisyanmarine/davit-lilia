@@ -4,7 +4,7 @@ import { FirstPagePart, FirstPagePartContext, GridDiv } from "./styled";
 import { useEffect, useState } from "react";
 
 export const FirstPage = () => {
-  const weddingDate = new Date(2026, 6, 17, 0, 0, 0).getTime();
+  const weddingDate = new Date(2026, 7, 24, 0, 0, 0).getTime();
   const calculateTimeLeft = () => {
     const now = new Date();
     const diff = weddingDate - now;
@@ -42,9 +42,9 @@ export const FirstPage = () => {
             Հարսանյաց <br /> հրավեր
           </h2>
           <Flexible className="uniqueDiv">
-            <h1>Արման</h1>
+            <h1>Դավիթ</h1>
             <p className="text-[89px] and">&</p>
-            <h1 className="uniqueH1">Շուշաննա</h1>
+            <h1 className="uniqueH1">Լիլիա</h1>
           </Flexible>
           <div className="w-full absolute bottom-9">
             <h2 className="uniqueH2">Մնաց</h2>

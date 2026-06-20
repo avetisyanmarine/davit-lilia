@@ -6,18 +6,14 @@ import {
 } from "./styled";
 import { Container } from "../../GlobalStyle";
 import SvgChurch from "../../assets/vectors/church.png";
-import Church from "../../assets/image/church.png";
+import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.jpg";
-import Photo2 from "../../assets/image/photo2.jpg";
-import SvgRing from "../../assets/vectors/ring.png";
+import BrideRoom from "../../assets/vectors/brideroom.png";
+import Bride from "../../assets/vectors/bride.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
 import { ThirdPageBlock } from "./third-page-block";
-import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
-import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
-import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
-import SerLiqySer from "../../assets/image/serliqyser.png";
 export const ThirdPage = () => {
   return (
     <ThirdPagePart>
@@ -26,18 +22,18 @@ export const ThirdPage = () => {
         <ThirdPagePartContext>
           <ThirdPageBlock
             className="uniqueone"
-            ImageSrc={SvgRing}
+            ImageSrc={BrideRoom}
             number={"11:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
           />
           <ThirdPageBlock
-            ImageSrc={SvgRing}
-            uniqueMargin={150}
+            ImageSrc={Bride}
+            uniqueMargin={10}
             number={"13:00"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
             />
           <ThirdPageBlock
-            uniqueMargin={150}
+            uniqueMargin={10}
             ImageSrc={SvgChurch}
             number={"15:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
@@ -52,29 +48,6 @@ export const ThirdPage = () => {
             smallText="Աշտարակ Հոլ ռեստորան"
           />
         </ThirdPagePartContext>
-        <div
-          className="flex h-[100vh] gap-[20px] justify-around"
-          style={{ marginTop: "70px" }}
-        >
-            <img src={SerLiqySer} className="h-[100vh] w-[40%]" />
-          <div className="flex flex-col gap-2 w-[60%]">
-            <img
-              src={PhotoGroup1}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-            <img
-              src={PhotoGroup2}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-            <img
-              src={PhotoGroup3}
-              alt=""
-              className="h-1/3 object-cover rounded-[10px]"
-            />
-          </div>
-        </div>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
@@ -88,7 +61,6 @@ export const ThirdPage = () => {
           />
         </ForthPagePartContext>
       </Container>
-      <img src={Photo2} className="rounded-[15px]" alt="" />
       <Container>
         <ThirdPagePartMini>
           <h3 className="dzev">Սիրով սպասում ենք</h3>

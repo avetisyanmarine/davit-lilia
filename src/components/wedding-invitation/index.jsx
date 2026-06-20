@@ -1,5 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect } from "react";
+import Lilia from "../../assets/image/lilia.png"; 
 
 const WeddingInvitationEnvelope = ({ onOpen }) => {
   const [isOpened, setIsOpened] = useState(false);
@@ -34,6 +35,8 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
 
   return (
     <div className="fixed inset-0 w-screen h-screen z-[9999] overflow-hidden bg-white/10 backdrop-blur-sm">
+      <img src={Lilia} alt="Lilia" className="absolute -bottom-2 -right-5 z-100 w-[150px]" />
+      <img src={Lilia} alt="Lilia" className="absolute -top-2 -left-5 z-100 w-[150px] rotate-180" />
       <motion.div
         className="absolute top-0 left-0 w-full h-[60%] z-30 shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
         animate={topControls}
@@ -41,7 +44,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
         style={{
           backgroundColor: "#e7e4e4",
           clipPath: "polygon(-120% 0%, 215% 0%, 50% 100%)",
-          borderBottom: "1px solid rgba(255,255,255,0.1)",
+          borderBottom: "1px solid rgba(159, 145, 56, 0.1)",
         }}
       />
 
@@ -50,7 +53,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
         animate={bottomControls}
         initial={{ y: 0 }}
         style={{
-          backgroundColor: "#c9c7c4", // Հիմնական մուգ գույնը
+          backgroundColor: "#D6AEAC", // Հիմնական մուգ գույնը
           clipPath: "polygon(-120% 0%, 205% 0%, 50% 100%)",
           rotate: "180deg",
         }}
@@ -61,7 +64,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
           animate={sealControls}
           initial={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.05 }}
-          className="absolute top-[59%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer drop-shadow-2xl"
+          className="absolute top-[59%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer"
           onClick={handleOpen}
         >
           <img

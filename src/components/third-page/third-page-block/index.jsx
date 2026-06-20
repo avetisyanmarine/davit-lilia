@@ -1,5 +1,6 @@
 import { ThirdPagePartContext } from "../styled";
 import { ThirdPageBlockPart, ThirdPageBlockPartSvg } from "./styled";
+import Line from "../../../assets/image/line.png";
 
 export const ThirdPageBlock = ({
   ImageSrc,
@@ -16,7 +17,7 @@ export const ThirdPageBlock = ({
         className={className || ""}
         style={{ marginTop: { uniqueMargin } ? `${uniqueMargin}px` : "" }}
       >
-        <ThirdPageBlockPartSvg line={line}>
+        <ThirdPageBlockPartSvg>
           <img loading="lazy" src={ImageSrc} />
         </ThirdPageBlockPartSvg>
         <ThirdPagePartContext data-aos="fade-left">
@@ -25,6 +26,14 @@ export const ThirdPageBlock = ({
           <p>{smallText}</p>
         </ThirdPagePartContext>
       </ThirdPageBlockPart>
+      {!line && (
+        <img
+          loading="lazy"
+          src={Line}
+          className="w-15"
+          style={{ margin: "50px auto" }}
+        />
+      )}
     </>
   );
 };
