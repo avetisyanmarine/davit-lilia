@@ -25,7 +25,7 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             className="uniqueone"
             ImageSrc={BrideRoom}
-            number={"11:00"}
+            number={"11:00"}D
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
             link="https://www.google.com/maps?q=40.2317976,44.4497529&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100813014&g_ep=CAISEjI2LjI0LjEuOTI4MjM2NTIyMBgAIIgnKlMsOTQyOTc2OTksOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsMTAwODEzNDY0LDk0Mjg2ODY5LDEwMDgxMzAxNEICQU0%3D&skid=43628acd-bc8d-4b4c-8ab3-1972ba81ae3f&g_st=iw"
           />
@@ -52,13 +52,13 @@ export const ThirdPage = () => {
             smallText="Աշտարակ Հոլ ռեստորան"
           />
         </ThirdPagePartContext>
-        <img src={Photo5} className="rounded-[15px]" style={{ marginTop: "50px" }} />
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
             bigText={"Սաղմոսավանք եկեղեցի"}
             mapSrc={"https://maps.app.goo.gl/j6HXoZW7etJwYDwm6"}
           />
+        <img src={Photo5} className="rounded-[15px]" style={{ marginTop: "50px" }} />
           <ForthPageBlock
             ImageSrc={Restaurant}
             bigText={"Աշտարակ Հոլ ռեստորան"}
