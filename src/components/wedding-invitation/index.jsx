@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect } from "react";
-import Lilia from "../../assets/image/lilia.png"; 
+import Lilia from "../../assets/image/lilia.webp"; 
 
 const WeddingInvitationEnvelope = ({ onOpen }) => {
   const [isOpened, setIsOpened] = useState(false);
@@ -68,7 +68,7 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
           onClick={handleOpen}
         >
           <img
-            src="letterbutton.png"
+            src="letterbutton.webp"
             alt="Seal"
             className="w-38 h-38 md:w-32 md:h-32 object-contain"
           />

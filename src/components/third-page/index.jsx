@@ -25,23 +25,30 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             className="uniqueone"
             ImageSrc={BrideRoom}
-            number={"11:00"}D
+            number={"10:00"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
             link="https://www.google.com/maps?q=40.2317976,44.4497529&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100813014&g_ep=CAISEjI2LjI0LjEuOTI4MjM2NTIyMBgAIIgnKlMsOTQyOTc2OTksOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsMTAwODEzNDY0LDk0Mjg2ODY5LDEwMDgxMzAxNEICQU0%3D&skid=43628acd-bc8d-4b4c-8ab3-1972ba81ae3f&g_st=iw"
           />
           <ThirdPageBlock
             ImageSrc={Bride}
             uniqueMargin={10}
-            number={"13:00"}
+            number={"11:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
             link="https://www.google.com/maps?q=40.0862200,44.4789980&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100813014&g_ep=CAISEjI2LjI0LjEuOTI4MjM2NTIyMBgAIIgnKlMsOTQyOTc2OTksOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsMTAwODEzNDY0LDk0Mjg2ODY5LDEwMDgxMzAxNEICQU0%3D&skid=cadd9e14-b7d0-4e59-9105-0a54258a9e46&g_st=ii"
           />
           <ThirdPageBlock
             uniqueMargin={10}
             ImageSrc={SvgChurch}
-            number={"15:00"}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
             smallText="Սաղմոսավանք եկեղեցի"
+          />
+          <ThirdPageBlock
+            className="uniqueone"
+            ImageSrc={BrideRoom}
+            number={"16:00"}
+            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
+            link="https://www.google.com/maps?q=40.2317976,44.4497529&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100813014&g_ep=CAISEjI2LjI0LjEuOTI4MjM2NTIyMBgAIIgnKlMsOTQyOTc2OTksOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsMTAwODEzNDY0LDk0Mjg2ODY5LDEwMDgxMzAxNEICQU0%3D&skid=43628acd-bc8d-4b4c-8ab3-1972ba81ae3f&g_st=iw"
           />
           <ThirdPageBlock
             className="secondBlock"

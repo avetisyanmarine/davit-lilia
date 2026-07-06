@@ -6,7 +6,7 @@ import SaveTheDate from "../../assets/image/savethedate.png";
 import AttendanceGuests from "../AttendanceGuests";
 import Photo4 from "../../assets/image/photo6.jpg";
 import { ForthPagePart } from "./styled";
-import Photo2 from "../../assets/image/photo2.png";
+import Photo2 from "../../assets/image/photo2.webp";
 
 export const ForthPage = () => {
   return (
