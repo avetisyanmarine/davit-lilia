@@ -61,7 +61,7 @@ export const ThirdPage = () => {
             ImageSrc={SvgCouple}
             number={"17:30"}
             direction="left"
-            bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
+            bigText="ՀԱՐՍԱՆՅԱՑ <br /> ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
             smallText="Աշտարակ Հոլ ռեստորան"
           />
         </ThirdPagePartContext>

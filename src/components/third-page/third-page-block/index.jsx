@@ -27,9 +27,7 @@ export const ThirdPageBlock = ({
           direction={direction}
         >
           <h3>{number}</h3>
-          <h3 className="mb-1">
-            {bigText}
-          </h3>
+          <h3 className="mb-1" dangerouslySetInnerHTML={{ __html: bigText }} />
           <p className="text-[24px]">{smallText}</p>
           {link && (
             <>

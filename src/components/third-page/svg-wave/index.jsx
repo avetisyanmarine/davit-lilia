@@ -1,20 +1,26 @@
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 export const SvgWaveLine = () => {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.9", "end 0.3"] // Ավելի երկար աշխատելու համար end 0.3
+    offset: ["start 0.9", "end 0.3"]
   });
 
-  // offsetDistance-ի երկրորդ արժեքը մեծացնելով (օրինակ՝ 2.5), 
-  // շարժումը կդառնա ավելի դանդաղ ու սահուն
-  const offsetDistance = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // Ավելացնում ենք spring՝ շարժումը դանդաղ ու "ծույլ" դարձնելու համար
+  // stiffness-ը իջեցրել եմ 20-ի, որ էլ ավելի դանդաղ շարժվի
+  const springProgress = useSpring(scrollYProgress, {
+    stiffness: 20, 
+    damping: 20,
+    restDelta: 0.001
+  });
 
-  // Երկարացրած path (ավելացրել եմ ևս մեկ Q կոր)
-  const path = "M 100 10 Q 190 150 100 250 Q -50 380 150 550 M 100 10 Q 190 150 100 250 Q -50 380 150 550 Q 250 700 100 850 Q -50 1000 150 1150 Q 290 1300 100 1450";
+  // Տիրույթը թողնում ենք 0-100%, որպեսզի չշեղվի
+  const offsetDistance = useTransform(springProgress, [0, 1], ["0%", "100%"]);
+
+  const path = "M 100 10 Q 190 150 100 250 Q -50 380 150 550 Q 250 700 100 850 Q -50 1000 150 1150 Q 290 1300 100 1450";
 
   return (
     <div 
@@ -36,7 +42,6 @@ export const SvgWaveLine = () => {
           position: "absolute",
           top: 0,
           left: 0,
-          // Եթե ուզում ես սրտիկը հենց գծի վրա լինի, ավելացրու translate
           offsetPath: `path("${path}")`,
           offsetDistance: offsetDistance,
         }}
