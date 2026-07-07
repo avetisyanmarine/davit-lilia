@@ -5,7 +5,7 @@ export const MusicPagePart = styled(Flexible)`
     position: fixed;
     z-index: 10;
     right: 0;
-    top: 65vh;
+    top: 68vh;
     width: 183px;
     height: 60px;
     background: #3d3a3a;

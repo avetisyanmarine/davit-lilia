@@ -4,23 +4,24 @@ import { Flexible } from "../../GlobalStyle";
 const ThirdPagePart = styled.div`
   h2 {
     width: fit-content;
-    margin: auto;
+    margin: 30px auto;
   }
   .photo2 {
     margin-top: 50px;
     width: 100%;
   }
-   .uniqueone{
+  .uniqueone {
     margin-top: 40px;
   }
 `;
 const ThirdPagePartContext = styled.div`
   overflow: hidden;
+  position: relative;
   .secondBlock {
     margin-left: 19px;
   }
   h3 {
-    font-size: 31px;
+    font-size: 22px;
   }
 `;
 const ThirdPagePartMini = styled.div`

@@ -1,21 +1,36 @@
 import styled from "styled-components";
 import { Flexible } from "../../../GlobalStyle";
 
-export const ThirdPageBlockPart = styled.div`
-  text-align: center;
+export const ThirdPageBlockPart = styled(Flexible)`
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+
+  /* Այստեղ ենք որոշում դիրքը */
+  align-items: ${({ direction }) =>
+    direction === "right"
+      ? "flex-end"
+      : direction === "left"
+        ? "flex-start"
+        : "center"};
+
+  text-align: ${({ direction }) => (direction === "right" ? "right" : "left")};
 `;
+
 export const ThirdPageBlockPartSvg = styled.div`
+  position: relative;
   img {
-    width: 100px;
+    width: 70px;
     height: 100%;
-    margin: 20px auto 20px auto;
     object-fit: contain;
   }
 `;
+
 export const ThirdPageBlockPartContext = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  /* Տեքստի հավասարեցումը ըստ direction-ի */
+  align-items: ${({ direction }) =>
+    direction === "right" ? "flex-end" : "flex-start"};
   gap: 12px;
 `;

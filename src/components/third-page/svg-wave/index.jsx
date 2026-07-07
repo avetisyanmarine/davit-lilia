@@ -1,0 +1,56 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+export const SvgWaveLine = () => {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 0.9", "end 0.3"] // Ավելի երկար աշխատելու համար end 0.3
+  });
+
+  // offsetDistance-ի երկրորդ արժեքը մեծացնելով (օրինակ՝ 2.5), 
+  // շարժումը կդառնա ավելի դանդաղ ու սահուն
+  const offsetDistance = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  // Երկարացրած path (ավելացրել եմ ևս մեկ Q կոր)
+  const path = "M 100 10 Q 190 150 100 250 Q -50 380 150 550 M 100 10 Q 190 150 100 250 Q -50 380 150 550 Q 250 700 100 850 Q -50 1000 150 1150 Q 290 1300 100 1450";
+
+  return (
+    <div 
+      ref={containerRef} 
+      className="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-[200px] h-[1400px]"
+    >
+      <svg width="200" height="1400" viewBox="0 0 200 1400" fill="none">
+        <path
+          d={path}
+          stroke="#3d3a3a"
+          strokeWidth="2"
+          fill="none"
+          strokeDasharray="10 8"
+        />
+      </svg>
+
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          // Եթե ուզում ես սրտիկը հենց գծի վրա լինի, ավելացրու translate
+          offsetPath: `path("${path}")`,
+          offsetDistance: offsetDistance,
+        }}
+      >
+        <svg 
+          width="26" 
+          height="26" 
+          viewBox="0 0 26 26" 
+          fill="red" 
+          className="stroke-white stroke-3 -translate-x-[13px] -translate-y-[13px]"
+        >
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        </svg>
+      </motion.div>
+    </div>
+  );
+};

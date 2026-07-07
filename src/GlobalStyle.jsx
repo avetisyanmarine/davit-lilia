@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: DavelAghvor;
     letter-spacing: 1px;
-    background-color: #d6aeac45;
+    background-color: #d157bb15;
   }
   @font-face {
     font-family: 'ArmAllegrou';
@@ -31,7 +31,6 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 36px;
     font-weight: 100;
-    color: #616652;
   }
   h1 {
     font-size: 80px;

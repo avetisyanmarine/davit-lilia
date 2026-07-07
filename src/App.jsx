@@ -7,7 +7,6 @@ import { SecondPage } from "./components/second-page";
 import { ThirdPage } from "./components/third-page";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BackToTop } from "./components/top-button";
 import WeddingInvitationEnvelope from "./components/wedding-invitation";
 
 function App ({isOpened}) {
@@ -23,7 +22,6 @@ function App ({isOpened}) {
       <ThirdPage />
       <ForthPage />
       <LastFooterPage />
-      {/* <BackToTop /> */}
     </>
   );
 }

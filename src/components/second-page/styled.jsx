@@ -20,6 +20,7 @@ const SecondPagePartContext = styled.div`
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 20px;
         img {
             object-fit: cover;
             margin-right: 20px;

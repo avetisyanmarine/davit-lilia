@@ -13,13 +13,11 @@ const Main = () => {
   const [isOpened, setIsOpened] = useState(false);
   useEffect(() => {
   if (!isOpened) {
-    // Ֆիքսում ենք body-ն, որ չշարժվի
     document.body.style.position = "fixed";
     document.body.style.top = `0px`;
     document.body.style.width = "100%";
     document.body.style.overflow = "hidden";
   } else {
-    // Վերադարձնում ենք նախկին վիճակին
     document.body.style.position = "";
     document.body.style.top = "";
     document.body.style.width = "";

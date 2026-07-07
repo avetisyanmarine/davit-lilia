@@ -9,21 +9,25 @@ export const ThirdPageBlock = ({
   smallText,
   uniqueMargin,
   className,
-  line,
+  direction,
   link,
 }) => {
   return (
     <>
       <ThirdPageBlockPart
         className={className || ""}
+        direction={direction}
         style={{ marginTop: { uniqueMargin } ? `${uniqueMargin}px` : "" }}
       >
         <ThirdPageBlockPartSvg>
           <img loading="lazy" src={ImageSrc} />
         </ThirdPageBlockPartSvg>
-        <ThirdPagePartContext data-aos="fade-left">
+        <ThirdPagePartContext
+          data-aos={direction === "right" ? "fade-right" : "fade-left"}
+          direction={direction}
+        >
           <h3>{number}</h3>
-          <h3 className="text-[#616652]! text-[24px] mb-1  text-center">
+          <h3 className="mb-1">
             {bigText}
           </h3>
           <p className="text-[24px]">{smallText}</p>
@@ -52,14 +56,6 @@ export const ThirdPageBlock = ({
           )}
         </ThirdPagePartContext>
       </ThirdPageBlockPart>
-      {!line && (
-        <img
-          loading="lazy"
-          src={Line}
-          className="w-15"
-          style={{ margin: "50px auto" }}
-        />
-      )}
     </>
   );
 };
