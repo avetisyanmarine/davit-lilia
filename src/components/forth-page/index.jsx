@@ -44,20 +44,6 @@ export const ForthPage = () => {
           className="rounded-[15px]"
           style={{ marginBottom: "40px" }}
         />
-        <h2 style={{ marginBottom: "20px", fontFamily: "cursive" }}>
-          Dress Code
-        </h2>
-        <Flexible
-          style={{ padding: "0 25px" }}
-          data-aos="fade-up"
-          className="w-full h-[272px] bg-white/45 text-2xl"
-        >
-          Խնդրում ենք հարսանիքի օրը <br /> ԽՈՒՍԱՓԵԼ <br /> սպիտակ հագուստ
-          կրելուց
-          <br />
-          <br />
-          Մնացած բոլոր երանգները սազում են Ձեզ առավել քան երբևէ
-        </Flexible>
       </div>
       <Container>
         <img
