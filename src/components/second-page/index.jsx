@@ -20,7 +20,7 @@ export const SecondPage = () => {
           alt="Photo 1"
           className="rounded-[15px]"
         />
-        <h2 className="text-[55px]! text-[#c11c84]!">24․08․2026</h2>
+        <h2 className="text-[55px]! text-[#4e0712]!">24․08․2026</h2>
       </Container>
     </SecondPagePart>
   );

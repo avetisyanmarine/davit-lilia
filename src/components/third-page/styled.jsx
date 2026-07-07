@@ -54,6 +54,7 @@ const ThirdPagePartCalendar = styled(Flexible)`
   }
   .special {
     position: relative;
+    color: #4e0712;
     &::after {
       content: "";
       width: 45px;

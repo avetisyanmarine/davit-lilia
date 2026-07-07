@@ -67,7 +67,7 @@ export const ForthPage = () => {
           style={{ margin: "40px 0" }}
         />
         <h2
-          className="text-center text-[40px]! font-[ArmAllegrou]"
+          className="text-center text-[40px]! text-[#4e0712] font-[ArmAllegrou]"
           style={{ margin: "20px 0" }}
         >
           Սիրով ՝ <br /> Դավիթ և Լիլիա
